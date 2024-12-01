@@ -1,6 +1,6 @@
-#System Design for BMI Calculator
+# System Design for BMI Calculator
 
-##Input
+## Input
 
 1. **Weight (w)**: Double data type, representing the user's weight in kilograms.
 
@@ -8,7 +8,7 @@
 
 3. **Count (count)**: Integer data type, used to control whether the program continues or stops.
 
-##Output
+## Output
 
 1. **BMI**: Double data type, representing the calculated Body Mass Index.
 
@@ -20,11 +20,11 @@
 
 "Overweight" if BMI > 24.9
 
-##Operation
+## Operation
 
 1. **BMI Calculation**: Use the formula BMI = w / (h * h) to calculate the Body Mass Index.
 
-##Pseudo Code
+## Pseudo Code
 
 1. **Start the program.**
 
