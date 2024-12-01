@@ -9,10 +9,22 @@ int main()
     cin>>name;
     cout<<"Input Weakly working hours: \n";
     cin>>wrk_hrs;
+    if(cin.fail()){
+        cout << "ERROR! invalid input.";
+        return 0;
+    }
     cout<<"Input Bonus rate per hour: \n";
     cin>>bns_rate;
+    if(cin.fail()){
+        cout << "ERROR! invalid input.";
+        return 0;
+    }
     cout<<"Input base salary: \n";
     cin>>base_slry;
+    if(cin.fail()){
+        cout << "ERROR! invalid input.";
+        return 0;
+    }
     bonus=wrk_hrs*bns_rate;
     gross_slry= base_slry + bonus;
     tax= gross_slry*0.15;
