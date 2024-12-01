@@ -11,23 +11,33 @@ int main()
 {
    // Declare required variables to store the weight, height and bmi  
  int cont;
- float w,h, BMI;
-do{
- cout<<"Input your weight \n";
- cin>>w;
+ float weight , height, BMI;
+
+   do{
+// ask the user to enter their weight and  height.
+  
+   cout<<"Input your weight \n";
+ cin>>weight;
  cout<<"Input your height \n";
- cin>>h;
- BMI=w/(h*h);
+ cin>>height;
+
+   // calculate the BMI and print it
+   BMI = weight /(height * height);
  cout<<"Your Body mass Index is : "<<BMI<<endl;
- if(BMI<18.5){
-     cout<<"Under weight. \n";
+
+   // Determine weight proportionality with height based on BMI
+   
+   if(BMI<18.5){
+     cout<<"You are Under weight. \n";
  }
  else if(BMI>=18.5 && BMI<=24.9){
-    cout<<"Normal weight. \n";
+    cout<<" You are Normal weight. \n";
  }else if(BMI<=25) {
-     cout<<"Over weight. \n";}
+    
+    cout<<"You are Over weight. \n";}
  cout<<"Enter 0 to stop or 1 to continue \n";
  cin>>cont;
- }while(cont!=0);
+ }
+   while(cont!=0);
     return 0;
 }
