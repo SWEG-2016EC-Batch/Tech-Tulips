@@ -1,17 +1,17 @@
-// A program that is  used to calculate the salary of an employee.
-
 #include <iostream>
-#include <iomanip>  // For setprecision
+#include <string>
+
 using namespace std;
 
 int main() {
-    // Declare the required variables
-    float weeklyHours;
-    double bonusRate, baseSalary, pensionRate = 0.05, taxRate = 0.15;  //initializing the pension rate to 5% and tax rate to 15% respectively
+    // Declare variables
+    string name;
+    double weeklyHours, bonusRate, baseSalary;
+    double grossSalary, pensionDeduction, taxDeduction, netSalary;
 
-    // Input the details
-    cout << "Enter base salary: ";
-    cin >> baseSalary;
+    // Input employee details
+    cout << "Enter employee name: ";
+    getline(cin, name);
 
     cout << "Enter weekly working hours: ";
     cin >> weeklyHours;
@@ -19,23 +19,27 @@ int main() {
     cout << "Enter bonus rate per hour: ";
     cin >> bonusRate;
 
-    // Calculate gross salary and bonus payment
-    double bonusPayment = weeklyHours * bonusRate;
-    double grossSalary = baseSalary + bonusPayment;
+    cout << "Enter base salary: ";
+    cin >> baseSalary;
 
-    // Calculate deductions
-    double pensionDeduction = grossSalary * pensionRate;
-    double taxDeduction = grossSalary * taxRate;
+    // Calculate gross salary
+    grossSalary = baseSalary + (weeklyHours * bonusRate);
 
-    // Calculate net salary
-    double netSalary = grossSalary - pensionDeduction - taxDeduction;
+    // Calculate pension deduction (5% of gross salary)
+    pensionDeduction = 0.05 * grossSalary;
 
-    // Display results
-    cout << "Gross Salary: $" << fixed << setprecision(2) << grossSalary << endl;
+    // Calculate tax deduction (15% of gross salary)
+    taxDeduction = 0.15 * grossSalary;
+
+    // Calculate net salary (gross salary minus pension and tax deductions)
+    netSalary = grossSalary - (pensionDeduction + taxDeduction);
+
+    // Output the results
+    cout << "\nEmployee Name: " << name << endl;
+    cout << "Gross Salary: $" << grossSalary << endl;
     cout << "Pension Deduction: $" << pensionDeduction << endl;
     cout << "Tax Deduction: $" << taxDeduction << endl;
     cout << "Net Salary: $" << netSalary << endl;
-    cout << "Bonus Payment: $" << bonusPayment << endl;
 
     return 0;
 }
