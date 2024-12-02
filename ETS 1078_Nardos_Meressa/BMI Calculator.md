@@ -25,23 +25,39 @@ If 18.5 <= BMI <= 24.9, print "You are Normal weight."
 If BMI > 24.9, print "You are Overweight."
 Ask the user if they want to continue or stop. If the user inputs 0, stop the loop.
 Pseudo Code
-Start the program.
-Declare cont as an integer and weight, height, BMI as float data types.
-Do the following steps:
-Prompt the user to input their weight.
-Take the input for weight and store it in the weight variable.
-Prompt the user to input their height.
-Take the input for height and store it in the height variable.
-Calculate the BMI as weight / (height * height) and store the result in the BMI variable.
-Print the BMI result as Your Body Mass Index is: BMI.
-Check the BMI category:
-If BMI < 18.5, print You are Underweight.
-Else if 18.5 <= BMI <= 24.9, print You are Normal weight.
-Else if BMI > 25, print You are Overweight.
-Prompt the user to enter 0 to stop or 1 to continue.
-Take the input for cont and store it in the cont variable.
-Repeat the loop while cont != 0.
-Stop the program.# flowchart
+1. Start the program.
+
+2. Declare cont as an integer and weight, height, BMI as float data types.
+
+3. Do the following steps:
+
+    3.1 Prompt the user to input their weight.
+
+   3.2 Take the input for weight and store it in the weight variable.
+
+    3.3 Prompt the user to input their height.
+
+    3.4 Take the input for height and store it in the height variable.
+
+   3.5 Calculate the BMI as weight / (height * height) and store the result in the BMI variable.
+
+   3.6 Print the BMI result as Your Body Mass Index is: BMI.
+
+    3.7 Check the BMI category:
+
+   7.1 If BMI < 18.5, print You are Underweight.
+
+    7.2 Else if 18.5 <= BMI <= 24.9, print You are Normal weight.
+
+     7.3 Else if BMI > 25, print You are Overweight.
+
+   8.Prompt the user to enter 0 to stop or 1 to continue.
+
+   9.Take the input for cont and store it in the cont variable.
+
+4.Repeat the loop while cont != 0.
+
+5.Stop the program.# flowchart
 ```mermaid
 graph TD;
     A([Start the program]) --> B[/Declare variables: cont, weight, height, BMI/]
