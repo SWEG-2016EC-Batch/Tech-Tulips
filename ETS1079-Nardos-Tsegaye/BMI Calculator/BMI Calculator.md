@@ -62,5 +62,6 @@ Else, print "Overweight."
 
 ## Flow chart
 
-![Blank diagram](https://github.com/user-attachments/assets/cd0d0542-f06f-4537-ae1c-d08c5f72ac5b)
+![Blank diagram (3)](https://github.com/user-attachments/assets/e78575a0-5686-4d81-b561-b6deca8bc2ae)
+
 
