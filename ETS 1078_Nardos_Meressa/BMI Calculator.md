@@ -24,3 +24,39 @@ If BMI < 18.5, print "You are Underweight."
 If 18.5 <= BMI <= 24.9, print "You are Normal weight."
 If BMI > 24.9, print "You are Overweight."
 Ask the user if they want to continue or stop. If the user inputs 0, stop the loop.
+# flowchart
+```mermaid
+graph TD;
+    A([Start the program]) --> B[/Declare variables: cont, weight, height, BMI/]
+    B --> C{Do-While loop}
+    
+    C --> D[/Print 'Input your weight'/]
+    D --> E[/Input weight/]
+    E --> F[/Print 'Input your height'/]
+    F --> G[/Input height/]
+    G --> H[Calculate BMI = weight / height * height]
+    H --> I[/Print 'Your Body Mass Index is: ' + BMI/]
+    
+    I --> J{Is BMI < 18.5?}
+    J -->|Yes| K[/Print 'You are Underweight'/]
+    J -->|No| L{Is BMI <= 24.9?}
+    
+    L -->|Yes| M[/Print 'You are Normal weight'/]
+    L -->|No| N{Is BMI <= 25?}
+    
+    N -->|Yes| O[/Print 'You are Overweight'/]
+    N -->|No| P[/Print 'You are Obesity'/]
+    
+    K --> Q
+    M --> Q
+    O --> Q
+    P --> Q
+    
+    Q --> R[/Print 'Enter 0 to stop or 1 to continue'/]
+    R --> S[/Input cont/]
+    S --> T{Is cont != 0?}
+    
+    T -->|Yes| C
+    T -->|No| U([End the program])
+
+```
