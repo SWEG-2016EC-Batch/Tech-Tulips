@@ -47,4 +47,8 @@
    - Else:
      - Print "Overweight"  
 6. **End Loop**  
-7. **End**  
+7. **End**
+   ## flowchart
+   ![Blank diagram](https://github.com/user-attachments/assets/7f518315-133d-4f5b-8622-f8191f73e29e)
+
+   
