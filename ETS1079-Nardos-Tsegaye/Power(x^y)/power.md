@@ -23,4 +23,5 @@
 9. **Stop** the program.
 
 ## Flowchart
-![Flowchart](insert-flowchart-image-url-here)
+![Blank diagram (4)](https://github.com/user-attachments/assets/a202e837-c516-47c7-8b9d-fdd904853708)
+
