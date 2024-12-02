@@ -27,5 +27,6 @@
 10. **Print** the total time in the format: `Your file takes ` + `total_days` +  + `total_hours`  + `total_minutes` + ` total_seconds`
 11. **Stop**
 ## Flowchart
-![Blank diagram (7)](https://github.com/user-attachments/assets/bcba59b8-f3a2-4f91-a7ab-b3f80f382f71)
+![Blank diagram (8)](https://github.com/user-attachments/assets/ec6d0631-2839-4bb6-a698-66f88ef4c07b)
+
 
