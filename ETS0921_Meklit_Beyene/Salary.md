@@ -23,15 +23,25 @@
 
 ## Operation
 
-**Bonus Payment Calculation:** Use the formula bonusPayment = weeklyHour * bonusRate to calculate the total bonus payment.
+**Bonus Payment Calculation:** Use the formula bonusPayment = weeklyHour * bonusRate
 
-**Gross Salary Calculation:** Use the formula grossSalary = baseSalary + bonusPayment to calculate the gross salary.
+to calculate the total bonus payment.
 
-**Pension Deduction Calculation:** Use the formula pensionDeduction = grossSalary * pensionRate to calculate the pension deduction.
+**Gross Salary Calculation:** Use the formula grossSalary = baseSalary + bonusPayment
 
-**Tax Deduction Calculation:** Use the formula taxDeduction = grossSalary * taxRate to calculate the tax deduction.
+to calculate the gross salary.
 
-**Net Salary Calculation:** Use the formula netSalary = grossSalary - pensionDeduction - taxDeduction to calculate the net salary.
+**Pension Deduction Calculation:** Use the formula pensionDeduction = grossSalary * pensionRate
+
+to calculate the pension deduction.
+
+**Tax Deduction Calculation:** Use the formula taxDeduction = grossSalary * taxRate 
+
+to calculate the tax deduction.
+
+**Net Salary Calculation:** Use the formula netSalary = grossSalary - pensionDeduction - taxDeduction
+
+to calculate the net salary.
 
 ## Pseudo Code
 
