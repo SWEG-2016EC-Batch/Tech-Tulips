@@ -21,7 +21,7 @@ do{
  }else {
      cout<<"Over weight."<<endl;
 	 }
- cout<<"Enter 0 to stop or 1 to continue"<<endl;
+ cout<<"Enter 0 to stop or any number to continue"<<endl;
  cin>>count;
  }while(count!=0);
     return 0;
