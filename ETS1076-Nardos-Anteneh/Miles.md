@@ -1,49 +1,42 @@
-# Question 2: Fuel Tank Capacity
+# Fuel Tank Capacity Program
 
-### Purpose  
-This program figures out how far a car can go without refueling. All you need is the tank size (in gallons) and the miles per gallon (mpg).  
-
----
-
-### Inputs  
-1. How many gallons the tank holds.  
-2. How many miles the car gets per gallon.  
+## Purpose
+This program calculates whether a given volume of fuel can fit into a tank with a specified capacity.
 
 ---
 
-### Output  
-- The total distance the car can drive without needing to refuel.  
+## Algorithm
+1. Start.
+2. Prompt the user to input the fuel tank's capacity.
+3. Prompt the user to input the amount of fuel to check.
+4. Compare the fuel amount with the tank's capacity:
+   - If the fuel amount is less than or equal to the capacity, print "The fuel will fit."
+   - Otherwise, print "The fuel will overflow."
+5. Stop.
 
 ---
 
-### Formula  
-**Total Miles** = `Tank Capacity` × `Miles Per Gallon`  
+## Code
+```cpp
+// Fuel Tank Capacity Program
+#include <iostream>
+using namespace std;
 
----
+int main() {
+    float tankCapacity, fuelAmount;
 
-### Steps  
-1. Ask the user how many gallons their tank holds.  
-2. Ask them how many miles their car can drive per gallon.  
-3. Multiply the two values to calculate the total distance.  
-4. Show the result.  
+    // Ask for tank capacity and fuel amount
+    cout << "Enter the tank capacity (in liters): ";
+    cin >> tankCapacity;
+    cout << "Enter the amount of fuel (in liters): ";
+    cin >> fuelAmount;
 
----
+    // Check if the fuel fits
+    if (fuelAmount <= tankCapacity) {
+        cout << "The fuel will fit in the tank." << endl;
+    } else {
+        cout << "The fuel will overflow." << endl;
+    }
 
-### Code Breakdown  
-- **Variables**:  
-  - `tankCapacity`: How much gas the tank holds (gallons).  
-  - `milesPerGallon`: How efficient the car is (mpg).  
-  - `totalMiles`: How far the car can go (miles).  
-- **Logic**:  
-  - Multiply `tankCapacity` and `milesPerGallon`.  
-  - Print the result.  
-
----
-
-### Example  
-**Input**:  
-- Tank: 15 gallons  
-- MPG: 25  
-
-**Output**:  
-The car can go 375 miles without refueling.
+    return 0;
+}
