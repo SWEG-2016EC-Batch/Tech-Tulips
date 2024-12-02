@@ -95,3 +95,32 @@ using netSalary = grossSalary - pensionDeduction - taxDeduction.
 the employee's name, bonus payment, gross salary, and net salary.
 
 **Stop the program.**
+
+# FlowChart
+
+```mermaid
+graph TD
+    A([Start Program]) --> B[/"Enter employee's name"/]
+    B --> C{Is employeeName valid?}
+    C -- No --> D[/Output: "Invalid input."/] --> Z([End])
+    C -- Yes --> E[/"Enter weekly working hours"/]
+    E --> F{Is weeklyHour valid?}
+    F -- No --> G[/Output: "Invalid input. Please enter a positive number!"/] --> Z([End])
+    F -- Yes --> H[/"Enter bonus rate per hour"/]
+    H --> I{Is bonusRate valid?}
+    I -- No --> J[/Output: "Invalid input. Please enter a positive number!"/] --> Z([End])
+    I -- Yes --> K[/"Enter base salary"/]
+    K --> L{Is baseSalary valid?}
+    L -- No --> M[/Output: "Invalid input. Please enter a positive number!"/] --> Z([End])
+    L -- Yes --> N["Calculate bonusPayment = weeklyHour * bonusRate"]
+    N --> O["Calculate grossSalary = baseSalary + bonusPayment"]
+    O --> P["Calculate pensionDeduction = grossSalary * 0.05"]
+    P --> Q["Calculate taxDeduction = grossSalary * 0.15"]
+    Q --> R["Calculate netSalary = grossSalary - pensionDeduction - taxDeduction"]
+    R --> S[/"Print 'Employee's name is: ' + employeeName"/]
+    S --> T[/"Print 'Bonus payment is: ' + bonusPayment"/]
+    T --> U[/"Print 'Gross salary is: ' + grossSalary"/]
+    U --> V[/"Print 'Net salary is: ' + netSalary"/]
+    V --> W([End])
+
+```
