@@ -25,6 +25,6 @@ The program should compute the result of an expression where the values of `X` a
 3. **Output**:
    - The result of `X^Y` is displayed to the user with an appropriate message.
    
-## Example Output:
+## flowchart 
+![17331693782378415323257833069468](https://github.com/user-attachments/assets/0be3b490-6914-4f86-be9d-f4121cb6684b)
 
-### Example 1:
