@@ -1,42 +1,39 @@
-# Fuel Tank Capacity Program
+# Question 2: Automobile Fuel Efficiency Program
 
-## Purpose
-This program calculates whether a given volume of fuel can fit into a tank with a specified capacity.
+### Problem:
+Write a program that prompts the capacity in gallons of an automobile fuel tank and the miles per gallon the automobile can be driven. The program should then output the number of miles the automobile can be driven without refueling.
 
----
+### Pseudo-code:
 
-## Algorithm
-1. Start.
-2. Prompt the user to input the fuel tank's capacity.
-3. Prompt the user to input the amount of fuel to check.
-4. Compare the fuel amount with the tank's capacity:
-   - If the fuel amount is less than or equal to the capacity, print "The fuel will fit."
-   - Otherwise, print "The fuel will overflow."
-5. Stop.
+1. Start
+2. Prompt the user to input the fuel tank capacity (in gallons).
+3. Prompt the user to input the miles the automobile can drive per gallon.
+4. Calculate **Miles to Drive** = Fuel tank capacity * Miles per gallon.
+5. Output the result: "The automobile can drive [Miles] miles without refueling."
+6. End
 
----
+### C++ Code:
 
-## Code
 ```cpp
-// Fuel Tank Capacity Program
 #include <iostream>
 using namespace std;
 
 int main() {
-    float tankCapacity, fuelAmount;
+    // Declare variables for fuel tank capacity and miles per gallon
+    double tankCapacity, milesPerGallon, milesToDrive;
 
-    // Ask for tank capacity and fuel amount
-    cout << "Enter the tank capacity (in liters): ";
+    // Prompt the user for input
+    cout << "Enter the fuel tank capacity in gallons: ";
     cin >> tankCapacity;
-    cout << "Enter the amount of fuel (in liters): ";
-    cin >> fuelAmount;
 
-    // Check if the fuel fits
-    if (fuelAmount <= tankCapacity) {
-        cout << "The fuel will fit in the tank." << endl;
-    } else {
-        cout << "The fuel will overflow." << endl;
-    }
+    cout << "Enter the number of miles the automobile can drive per gallon: ";
+    cin >> milesPerGallon;
+
+    // Calculate the number of miles the automobile can drive without refueling
+    milesToDrive = tankCapacity * milesPerGallon;
+
+    // Output the result
+    cout << "The automobile can drive " << milesToDrive << " miles without refueling." << endl;
 
     return 0;
 }
