@@ -58,3 +58,9 @@ Else, print "Overweight."
 
 4. **Stop** the program when count = 0.
 
+
+   ```mermaid
+         graph TD
+           A(Start) --> B[INPUT]-->
+           C{CHECK }
+
