@@ -38,6 +38,9 @@
    - Set `p = p * X`
 8. Print "Result: ", `p`
 9. **End**
+    ## flowchart
+   ![Blank diagram(2)](https://github.com/user-attachments/assets/85965162-f6e2-44ad-b4cc-938b23cf6964)
+
 
 
 
