@@ -47,6 +47,7 @@
 7. Print "Your file takes ", `hour`, " hour to send the file."
 8. **End**
 ## flowchart
-![Blank diagram(4)](https://github.com/user-attachments/assets/8a3fc3ee-c70b-4334-8b49-3fecc5436391)
+![Blank diagram(5)](https://github.com/user-attachments/assets/651f0e4d-b3b6-4f90-91e6-fa19d83264e1)
+
 
 
