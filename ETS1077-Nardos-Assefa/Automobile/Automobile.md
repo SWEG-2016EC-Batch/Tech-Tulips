@@ -40,6 +40,9 @@
    \]
 8. Print "Your car can be driven ", `num_miles`, " miles without refueling."
 9. **End**
+    ## flowchart
+   ![Blank diagram(1)](https://github.com/user-attachments/assets/f776daaa-95da-4daa-8890-dae844a84ad5)
+
 
 
 
