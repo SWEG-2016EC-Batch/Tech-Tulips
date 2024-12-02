@@ -5,8 +5,12 @@ int main() {
     // Defining the transmission rate in characters per second
     const int transmissionRate = 960; // characters per second
     
-    // File size (in bytes)
-    long long fileSize = 419430400; // 400MB = 419,430,400 bytes
+    // Variable to hold the file size in bytes
+    long long fileSize;
+
+    // Ask the user for the file size in bytes
+    cout << "Enter the file size in bytes: ";
+    cin >> fileSize;
 
     // Calculate the time it will take to transmit the file (in seconds)
     long long timeInSeconds = fileSize / transmissionRate;
