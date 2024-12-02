@@ -43,4 +43,24 @@
 21. **Stop** the program.
 
 ## Flowchart
-![Flowchart](insert-flowchart-)
+flowchart TD  
+    A((Start)) --> B[/Declare name (string)/]  
+    B --> C[/Declare wrk_hrs, bns_rate, base_slry, bonus, gross_slry, tax, pension, net_slry (double)/]  
+    C --> D[/Prompt user to enter employee's name/]  
+    D --> E[/Take name input and store in name/]  
+    E --> F[/Prompt user to enter weekly working hours/]  
+    F --> G[/Take wrk_hrs input and store in wrk_hrs/]  
+    G --> H[/Prompt user to enter bonus rate per hour/]  
+    H --> I[/Take bns_rate input and store in bns_rate/]  
+    I --> J[/Prompt user to enter base salary/]  
+    J --> K[/Take base_slry input and store in base_slry/]  
+    K --> L[Calculate bonus: bonus = wrk_hrs * bns_rate]  
+    L --> M[Calculate gross salary: gross_slry = base_slry + bonus]  
+    M --> N[Calculate tax: tax = gross_slry * 0.15]  
+    N --> O[Calculate pension: pension = gross_slry * 0.5]  
+    O --> P[Calculate net salary: net_slry = gross_slry - pension - tax]  
+    P --> Q[/Print employee name/]  
+    Q --> R[/Print gross salary: Gross salary is: gross_slry/]  
+    R --> S[/Print net salary: Net salary is: net_slry/]  
+    S --> T[/Print bonus payment: Bonus payment is: bonus/]  
+    T --> U((Stop))
