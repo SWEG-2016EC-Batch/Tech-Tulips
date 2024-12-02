@@ -1,3 +1,4 @@
+# flow chart
 ```mermaid
 graph TD
     A([Start Program]) --> B[/"Enter base salary"/]
