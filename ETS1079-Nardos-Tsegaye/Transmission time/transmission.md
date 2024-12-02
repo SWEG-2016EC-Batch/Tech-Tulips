@@ -24,4 +24,8 @@
 7. **Convert** seconds to minutes: `total_minutes = total_sec / 60`.
 8. **Convert** minutes to hours: `total_hours = total_minutes / 60`.
 9. **Convert** hours to days: `total_days = total_hours / 24`.
-10. **Print** the total time in the format: `Your file takes ` + `total_days` + ` days, ` + `total_hours` + ` hours, ` + `total_minutes` + ` m
+10. **Print** the total time in the format: `Your file takes ` + `total_days` +  + `total_hours`  + `total_minutes` + ` total_seconds`
+11. **Stop**
+## Flowchart
+![Blank diagram (7)](https://github.com/user-attachments/assets/bcba59b8-f3a2-4f91-a7ab-b3f80f382f71)
+
