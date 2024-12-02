@@ -27,30 +27,4 @@
 10. **Print** the total time in the format: `Your file takes ` + `total_days` +  + `total_hours`  + `total_minutes` + ` total_seconds`
 11. **Stop**
 ## Flowchart
-```mermaid
-flowchart TD
-    A([Start the program]) --> B[/Prompt user for file size in bytes/]
-    B --> C[/Input file_size/]
-    C --> D{Is file_size valid?}
-    D -- No --> E[/Output: "Invalid input. Please enter a positive number!"/] --> T([End the program])
-    D -- Yes --> F["Calculate total time in seconds as: transmissionTimeSeconds = file_size / 960"]
-    F --> G["Calculate time breakdown"]
-
-    G --> H[Calculate Days]
-    H --> I[Set days = transmissionTimeSeconds / 86400]
-    I --> J[transmissionTimeSeconds%=86400]
-    
-    J --> K[Calculate Hours]
-    K --> L[Set hours = transmissionTimeSeconds / 3600]
-    L --> M[Update transmissionTimeSeconds %=3600]
-    
-    M --> N[Calculate Minutes]
-    N --> O[Set minutes = transmissionTimeSeconds / 60]
-    O --> P[Update transmissionTimeSeconds %=60]
-
-    P --> Q[Calculate Seconds]
-    Q --> R[Set seconds = transmissionTimeSeconds]
-
-    R --> S[/Output the result/]
-    S --> T([End the program])
-```
+![Blank diagram (8)](https://github.com/user-attachments/assets/ec6d0631-2839-4bb6-a698-66f88ef4c07b)
