@@ -29,7 +29,7 @@
 
 **Pension Deduction Calculation:** Use the formula pensionDeduction = grossSalary * pensionRate to calculate the pension deduction.
 
-**Tax Deduction Calculation:** Use the formula taxDeduction = (grossSalary - pensionDeduction) * taxRate to calculate the tax deduction.
+**Tax Deduction Calculation:** Use the formula taxDeduction = grossSalary * taxRate to calculate the tax deduction.
 
 **Net Salary Calculation:** Use the formula netSalary = grossSalary - pensionDeduction - taxDeduction to calculate the net salary.
 
@@ -85,7 +85,7 @@ grossSalary = baseSalary + bonusPayment.
 
 **Calculate pensionDeduction using** pensionDeduction = grossSalary * pensionRate.
 
-**Calculate taxDeduction using** taxDeduction = (grossSalary - pensionDeduction) * taxRate.
+**Calculate taxDeduction using** taxDeduction = grossSalary * taxRate.
 
 **Calculate netSalary**
 using netSalary = grossSalary - pensionDeduction - taxDeduction.
