@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-   double x,y,answer(x^y);
+   double x,y,answer;
    cout<<"Enter the value of X : \n";
    cin>>x;
    if(cin.fail()){
@@ -17,7 +17,7 @@ int main()
         cout << "ERROR! invalid input.";
         return 0;
     }
-   answer(x^y)=pow(x,y);
-   cout<<x<<" the power of "<<y<<" is: "<<answer(x^y)<<endl;
+   answer=pow(x,y);
+   cout<<x<<" the power of "<<y<<" is: "<<answer<<endl;
    return 0;
 }
