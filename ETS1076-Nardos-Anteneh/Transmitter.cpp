@@ -11,9 +11,10 @@ int main() {
     // Ask the user for the file size in bytes
     cout << "Enter the file size in bytes: ";
     cin >> fileSize;
+    long long character=fileSize*256;
 
     // Calculate the time it will take to transmit the file (in seconds)
-    long long timeInSeconds = fileSize / transmissionRate;
+    long long timeInSeconds = character/ transmissionRate;
 
     // Convert time from seconds to more readable units (days, hours, minutes, seconds)
     long long days = timeInSeconds / (24 * 3600);
