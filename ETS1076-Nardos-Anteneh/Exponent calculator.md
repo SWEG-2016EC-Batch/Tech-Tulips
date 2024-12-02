@@ -1,40 +1,30 @@
-# Power Calculator Program (C++)
+# Expression Result Calculator Program
 
-### Algorithm Design
+## Problem:
+The program should compute the result of an expression where the values of `X` and `Y` are entered by the user. The expression used for this task is `X^Y`, which represents `X` raised to the power of `Y`.
 
-1. **Input:** 
-   - Get the base value (`x`) and the exponent value (`y`) from the user.
+### Task:
+1. The program will prompt the user to input the values for `X` and `Y`.
+2. It will compute the result of the expression `X^Y`.
+3. It will output the result of this calculation.
+
+## Pseudo-code:
+1. Start the program.
+2. Prompt the user to enter the values for `X` and `Y`.
+3. Compute the result using the formula `X^Y`.
+4. Display the result of the expression.
+5. End the program.
+
+## C++ Code Explanation:
+1. **Input**:
+   - The user is prompted to enter the values of `X` and `Y`, which are both of type `double` to allow for precision.
    
-2. **Process:**
-   - Use the formula `x^y` to calculate the result. This can be done using `pow(x, y)`.
+2. **Calculation**:
+   - The program uses the `pow()` function from the `<cmath>` library to compute `X^Y`. The `pow()` function takes two arguments and returns the result of the first argument raised to the power of the second argument.
+   
+3. **Output**:
+   - The result of `X^Y` is displayed to the user with an appropriate message.
+   
+## Example Output:
 
-3. **Output:**
-   - Display the result of `x^y`.
-
----
-
-### C++ Code
-
-```cpp
-#include <iostream>
-#include <cmath>  // For pow() to do the power calculation
-
-using namespace std;
-
-int main() {
-    double x, y, result;
-
-    // Ask the user for the base and exponent values
-    cout << "Hey! Enter the base (x): ";
-    cin >> x;
-    cout << "Now, enter the exponent (y): ";
-    cin >> y;
-
-    // Calculate x raised to the power of y
-    result = pow(x, y);
-
-    // Show the result
-    cout << x << " raised to the power of " << y << " is: " << result << endl;
-
-    return 0;
-}
+### Example 1:
