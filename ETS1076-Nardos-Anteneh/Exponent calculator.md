@@ -15,16 +15,7 @@ The program should compute the result of an expression where the values of `X` a
 4. Display the result of the expression.
 5. End the program.
 
-## C++ Code Explanation:
-1. **Input**:
-   - The user is prompted to enter the values of `X` and `Y`, which are both of type `double` to allow for precision.
-   
-2. **Calculation**:
-   - The program uses the `pow()` function from the `<cmath>` library to compute `X^Y`. The `pow()` function takes two arguments and returns the result of the first argument raised to the power of the second argument.
-   
-3. **Output**:
-   - The result of `X^Y` is displayed to the user with an appropriate message.
-   
-## flowchart 
+  
+## flowchart:
 ![17331693782378415323257833069468](https://github.com/user-attachments/assets/0be3b490-6914-4f86-be9d-f4121cb6684b)
 
