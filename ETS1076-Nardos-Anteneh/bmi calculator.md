@@ -47,6 +47,6 @@ The program should continue running until the user chooses to stop.
 4. **Loop**:
    - The program continues asking for inputs and calculating BMI for new people until the user decides to stop by entering 'n' or 'N' when prompted.
 
-## Example Output:
+## flowchart 
+![17331692245815543580612498589066](https://github.com/user-attachments/assets/f7709bfe-4874-422d-9cb8-09729b0a8d1e)
 
-### Example 1:
