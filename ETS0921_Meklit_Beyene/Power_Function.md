@@ -42,3 +42,17 @@ If the input for y is invalid, then
 **Output** the value of x raised to the power of y.
 
 **Stop the program.**
+# FlowChart
+```mermaid
+flowchart 
+    id1([Start]) --> id2[/Enter the value of x/]
+    id2 --> id3{Is x valid?}
+    id3 -- No --> id4[/Output: "Invalid input"/] --> id10([End])
+    id3 -- Yes --> id5[/Enter the value of y/]
+    id5 --> id6{Is y valid?}
+    id6 -- No --> id7[/Output: "Invalid input"/] --> id10([End])
+    id6 -- Yes --> id8[Calculate power using pow function]
+    id8 --> id9[/Output: "The value of x to the power of y is " power/]
+    id9 --> id10([End])
+
+```
