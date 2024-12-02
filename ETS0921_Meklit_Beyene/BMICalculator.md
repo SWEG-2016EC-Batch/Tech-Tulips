@@ -22,3 +22,11 @@ Calculate for another person? (yes/no)
   | YES                | NO
   v                    v
 (REPEAT)             END
+```mermaid
+flowchart TD
+A([start]) --> B[/input weight, height/]
+B --> C["BMI = weight/height × height"]
+C --> D{is BMI}
+D -- yes --> E[djdjnf]
+D -- no --> F[gjfj]
+```
