@@ -44,3 +44,19 @@ Stop the program.
 **Output** the number of miles the automobile can be driven without refueling.
 
 **Stop the program.**
+
+#FlowChart
+
+```mermaid
+graph TD
+    A([Start Program]) --> B[/"Enter capacity in gallons of an automobile fuel tank"/]
+    B --> C{Is capacity_in_gallon valid?}
+    C -- No --> D[/Output: "Invalid input. Please enter a positive number!"/] --> H([End])
+    C -- Yes --> E[/"Enter miles per gallon the automobile can be driven"/]
+    E --> F{Is miles_per_gallon valid?}
+    F -- No --> G[/Output: "Invalid input. Please enter a positive number!"/] --> H([End])
+    F -- Yes --> I["number_mile_driven = capacity_in_gallon * miles_per_gallon"]
+    I --> J[/Output: "Number of miles the automobile can be driven without refueling is " number_mile_driven/]
+    J --> K([End])
+
+```
