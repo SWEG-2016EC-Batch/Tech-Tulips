@@ -76,4 +76,7 @@
 18. Print "Net salary is:", `net_salary`
 19. Print "Bonus payment is:", `bonus`
 20. **End**
+    ## flowchart
+    ![Blank diagram(3)](https://github.com/user-attachments/assets/d51b58ab-af4b-42f5-b212-7a8b7bb4cafb)
+
 
