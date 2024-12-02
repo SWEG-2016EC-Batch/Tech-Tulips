@@ -57,7 +57,8 @@ Pseudo Code
 
 4.Repeat the loop while cont != 0.
 
-5.Stop the program.# flowchart
+5.Stop the program.
+## flowchart
 ```mermaid
 graph TD;
     A([Start the program]) --> B[/Declare variables: cont, weight, height, BMI/]
