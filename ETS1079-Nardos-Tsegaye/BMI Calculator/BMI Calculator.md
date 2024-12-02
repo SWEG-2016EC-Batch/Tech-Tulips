@@ -30,33 +30,34 @@
 
 2. **Declare variables**: w (weight), h (height), BMI (Body Mass Index) as double, and count as int.
 
-3. **Do the following in a loop**:
+3. **Do the following in the loop**
 
-**Prompt** the user to input their weight.
+  3.1**Prompt** the user to input their weight.
 
-**Input** the value of w.
+  3.2**Input** the value of w.
 
-**Prompt** the user to input their height.
+  3.3**Prompt** the user to input their height.
 
-**Input** the value of h.
+  3.4**Input** the value of h.
 
-Calculate BMI using BMI = w / (h * h).
+4. Calculate BMI using BMI = w / (h * h).
 
-**Print** the calculated BMI.
+5. **Print** the calculated BMI.
 
-Check the BMI category:
+6. Check the BMI category:
 
-If BMI < 18.5, print "Underweight."
+6.1 If BMI < 18.5, print "Underweight."
 
 Else if 18.5 ≤ BMI ≤ 24.9, print "Normal weight."
 
 Else, print "Overweight."
 
-**Prompt** the user to enter 0 to stop or 1 to continue.
+7. **Prompt** the user to enter 0 to stop or 1 to continue.
 
-**Input** the value of count.
+7.1 **Input** the value of count.
+7.1 **If the value of cout is 1 go to step 3.
 
-4. **Stop** the program when count = 0.
+8. **Stop** the program when count = 0.
 
 
 ## Flow chart
