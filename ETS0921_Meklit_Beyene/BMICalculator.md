@@ -58,7 +58,8 @@ Stop the program.
    **Calculate BMI using BMI = weight / (height * height).**
     
 **Output the calculated BMI**
-    Check the BMI category:
+
+  Check the BMI category:
 	
 If BMI < 18.5, then
             Output: "Underweight"
