@@ -36,7 +36,7 @@ return 0;
  bonusPayment=weeklyHour*bonusRate;
  grossSalary=baseSalary+bonusPayment;
  pensionDeduction=grossSalary*pensionRate;
- taxDeduction=(grossSalary-pensionDeduction)*taxRate;
+ taxDeduction=grossSalary*taxRate;
  netSalary=grossSalary-pensionDeduction-taxDeduction;
 
 cout<<"employee's name is:"<<" "<<employeeName<<endl;
