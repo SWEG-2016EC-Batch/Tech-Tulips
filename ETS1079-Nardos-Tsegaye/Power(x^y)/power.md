@@ -23,19 +23,6 @@
 9. **Stop** the program.
 
 ## Flowchart
-```mermaid
-  
-    A([Start]) --> B[Declare variables x, y, answer]  
-    B --> C[/Print "Enter the value of X:"/]  
-    C --> D[/Input x/]  
-    D --> E{Input valid?}  
-    E -- Yes --> F[/Print "Enter the value of Y:"/]  
-    E -- No --> G[/Print "ERROR! Invalid input." -> M[End]/]  
-    F --> H[/Input y/]  
-    H --> I{Input valid?}  
-    I -- Yes --> J[answer = using power function, pow]   
-    I -- No --> K[/Print "ERROR! Invalid input." -> M[End]/]  
-    J --> L[/Print result/]  
-    L --> M[(End)]
-```
+![Blank diagram (4)](https://github.com/user-attachments/assets/b2e14932-29c8-472e-96e4-6e81df72c11b)
+
 
