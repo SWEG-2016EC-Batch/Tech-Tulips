@@ -12,28 +12,6 @@ Write a program that prompts the capacity in gallons of an automobile fuel tank 
 5. Output the result: "The automobile can drive [Miles] miles without refueling."
 6. End
 
-### C++ Code:
+### flowchart:
+![17331698491094210046543520637909](https://github.com/user-attachments/assets/cf78d042-f50f-423e-898c-e3aae773770f)
 
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    // Declare variables for fuel tank capacity and miles per gallon
-    double tankCapacity, milesPerGallon, milesToDrive;
-
-    // Prompt the user for input
-    cout << "Enter the fuel tank capacity in gallons: ";
-    cin >> tankCapacity;
-
-    cout << "Enter the number of miles the automobile can drive per gallon: ";
-    cin >> milesPerGallon;
-
-    // Calculate the number of miles the automobile can drive without refueling
-    milesToDrive = tankCapacity * milesPerGallon;
-
-    // Output the result
-    cout << "The automobile can drive " << milesToDrive << " miles without refueling." << endl;
-
-    return 0;
-}
