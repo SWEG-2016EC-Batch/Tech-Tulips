@@ -71,35 +71,41 @@ If BMI < 18.5, then
 			
 **Stop the program.**
 
-START
-  |
-  v
-Input: weight, height
-  |
-  v
-Calculate BMI = weight / (height * height)
-  |
-  v
-Is BMI < 18.5?
-  | YES         | NO
-  v             v
-Output:        Is BMI < 24.9?
-"Underweight"   | YES         | NO
-                v             v
-            Output:       Output:
-            "Normal       "Overweight"
-            weight"
-  |
-  v
-Calculate for another person? (yes/no)
-  | YES                | NO
-  v                    v
-(REPEAT)             END
+# FlowChart
+
 ```mermaid
-flowchart TD
-A([start]) --> B[/input weight, height/]
-B --> C["BMI = weight/height × height"]
-C --> D{is BMI}
-D -- yes --> E[djdjnf]
-D -- no --> F[gjfj]
+graph TD;
+    A([Start the program]) --> B[/Declare variables: height, weight, BMI, num_reptition/]
+    B --> C[/Print 'Please enter the number of people you want to calculate BMI for:' /]
+    C --> D[/Input num_reptition/]
+    D --> E{Is num_reptition valid?}
+    E -- No --> F[/Output: "Invalid input. Please enter a positive number!"/] --> U([End the program])
+    E -- Yes --> G[For i from 1 to num_reptition]
+    
+    G --> H[/Print 'Please enter your weight in kg'/]
+    H --> I[/Input weight/]
+    I --> J{Is weight valid?}
+    J -- No --> K[/Output: "Invalid input. Please enter a positive number!"/] --> U([End the program])
+    J -- Yes --> L[/Print 'Please enter your height in meters'/]
+    L --> M[/Input height/]
+    M --> N{Is height valid?}
+    N -- No --> O[/Output: "Invalid input. Please enter a positive number!"/] --> U([End the program])
+    N -- Yes --> P[Calculate BMI = weight / height * height]
+    P --> Q[/Print 'Your Body Mass Index is: ' + BMI/]
+    
+    Q --> R{Is BMI < 18.5?}
+    R -- Yes --> S[/Output: "Underweight"/]
+    R -- No --> T{Is BMI ≤ 24.9?}
+    
+    T -- Yes --> V[/Output: "Normal weight"/]
+    T -- No --> W{Is BMI > 25?}
+    
+    W -- Yes --> X[/Output: "Overweight"/]
+    
+    S --> Y
+    V --> Y
+    X --> Y
+    Y --> G
+    G --> U([End the program])
+
 ```
