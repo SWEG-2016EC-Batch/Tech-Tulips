@@ -38,3 +38,5 @@ Pseudocode
 6. Done!
 
 Flow chart:
+![17340053992184407522168542966120](https://github.com/user-attachments/assets/13656d67-5803-4402-ab8d-7f56af111360)
+
