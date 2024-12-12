@@ -1,19 +1,19 @@
 This program helps you calculate the net pay of an employee after deducting pension (7%) and applying tax. It also handles overtime if the employee works more than 40 hours a week
 
- What You’ll Enter (Inputs)
+ Inputs
 - Basic Salary:The fixed amount the employee earns.
 - Worked Hours:How many hours they worked in a week.
 - Bonus Rate: A percentage-based bonus on their basic salary.
 - Overtime Rate: (If they worked more than 40 hours) How much extra they earn per hour.
 
- What You’ll Get (Outputs)
+ Outputs
 - Gross Pay: total income before deductions.
 - Pension Deduction: 7% of the gross pay.
 - Tax Deduction: Based on tax brackets.
 - net Pay:The take-home salary after all deductions.
   
 
-Pseudocode (Game Plan for the Program)
+Pseudocode 
 
 1. Start the program.
 2. Ask for:
