@@ -1,4 +1,4 @@
-## Pseudo Code for the Given Code
+## Pseudo Code for alphabet right angle triangle
 
 ### Input
 1. No explicit input from the user.
