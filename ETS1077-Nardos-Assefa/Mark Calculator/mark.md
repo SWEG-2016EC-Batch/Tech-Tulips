@@ -1,5 +1,5 @@
 # **Pseudo Code for Student Grade Calculator**
-Input
+# **Input**
 
     Test Mark (test): Float, representing the test score out of 15%.
     Quiz Mark (quiz): Float, representing the quiz score out of 5%.
@@ -7,17 +7,17 @@ Input
     Assignment Mark (assignment): Float, representing the assignment score out of 10%.
     Final Exam Mark (final_exam): Float, representing the final exam score out of 50%.
 
-Output
+# **Output**
 
     Total Mark (total): Float, the sum of all marks.
     Grade: Character grade based on the total mark: A+ if total ≥ 90 A if 80 ≤ total < 90 B+ if 75 ≤ total < 80 B if 60 ≤ total < 75 C+ if 55 ≤ total < 60 C if 45 ≤ total < 55 D if 30 ≤ total < 45 F if total < 30
 
-Operations
+# **Operations**
 
     Calculate the total mark as the sum of the individual components.
     Determine the grade based on the total mark using conditional statement.
 
-Pseudo Code
+# **Pseudo Code**
 
     Start the program.
 
