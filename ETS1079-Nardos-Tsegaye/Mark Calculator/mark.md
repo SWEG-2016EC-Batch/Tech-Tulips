@@ -17,8 +17,8 @@
   D if 30 ≤ total < 45
   F if total < 30
 ## Operations
-Calculate the total mark as the sum of the individual components.
-Determine the grade based on the total mark using conditional statement.
+- Calculate the total mark as the sum of the individual components.
+- Determine the grade based on the total mark using conditional statement.
 
 ## Pseudo Code
 1. **Start the program.**
