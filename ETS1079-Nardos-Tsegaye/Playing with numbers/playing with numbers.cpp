@@ -90,14 +90,18 @@ int main() {
        case 7:
 
              while (num > 0) {
-                remain = num % 10;
-                if (remain == first) {
-                    freq++;
-                }
-                remain /= 10;
+        remain= num % 10;
+        freq[remain]++;
+        num /= 10;
             }
-            cout << "Frequency of first digit: " << freq << endl;
-          break;
+    
+          cout << "Digit\tFrequency" << endl;
+        for (int i = 0; i < 10; i++) {
+        if (freq[i] > 0) {
+            cout << i << "\t" << freq[i] << endl;
+        }
+           }
+            break;
        case 8:
         
             while (num > 0) {
