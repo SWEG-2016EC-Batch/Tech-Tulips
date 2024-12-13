@@ -1,4 +1,4 @@
-Pseudo Code for Student Grade Calculator
+# **Pseudo Code for Student Grade Calculator**
 Input
 
     Test Mark (test): Float, representing the test score out of 15%.
