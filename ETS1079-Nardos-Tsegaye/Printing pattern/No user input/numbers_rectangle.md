@@ -1,4 +1,4 @@
-## Pattern: Number rectangle
+## Pattern: Numbers rectangle
 
 ### Input
 1. No explicit input from the user.
