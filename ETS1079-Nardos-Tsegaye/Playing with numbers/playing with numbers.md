@@ -98,8 +98,4 @@
      - Compare the sum to the original number.
      - **Print** whether it is a perfect number.
 
-6. **Ask the user** whether to continue or stop:
-   - If user inputs `0`, exit the loop and end the program.
-   - If user inputs `1`, repeat the loop starting from Step 3.
-
-7. **End the program.**
+6. **End the program.**
