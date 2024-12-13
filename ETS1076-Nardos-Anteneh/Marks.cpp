@@ -1,47 +1,74 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    double test, quiz, project, assignment, finalExam, total;
-    char grade;
-
-    cout << "Enter the Test mark (out of 100): ";
+int main(){
+    double test, quiz, project, assignment, finalScore, total;
+    
+    cout << "Enter score obtained for test out of (15%): ";
     cin >> test;
-
-    cout << "Enter the Quiz mark (out of 100): ";
-    cin >> quiz;
-
-    cout << "Enter the Project mark (out of 100): ";
-    cin >> project;
-
-    cout << "Enter the Assignment mark (out of 100): ";
-    cin >> assignment;
-
-    cout << "Enter the Final Exam mark (out of 100): ";
-    cin >> finalExam;
-
-    total = (test * 0.15) + (quiz * 0.05) + (project * 0.20) + (assignment * 0.10) + (finalExam * 0.50);
-
-    if (total >= 90) {
-        grade = 'A+';
-    } else if (total >= 80) {
-        grade = 'A';
-    } else if (total >= 75) {
-        grade = 'B+';
-    } else if (total >= 60) {
-        grade = 'B';
-    } else if (total >= 55) {
-        grade = 'C+';
-    } else if (total >= 45) {
-        grade = 'C';
-    } else if (total >= 30) {
-        grade = 'D';
-    } else {
-        grade = 'F';
+    if (cin.fail() || test > 15) {
+        cout << "Invalid input\n";
+        cin.clear();
+        cin.ignore();
+        return 1;
     }
 
-    cout << "Total Marks: " << total << endl;
-    cout << "Grade: " << grade << endl;
+    cout << "Enter score obtained for quiz out of (5%): ";
+    cin >> quiz;
+    if (cin.fail() || quiz > 5) {
+        cout << "Invalid input\n";
+        cin.clear();
+        cin.ignore();
+        return 1;
+    }
+
+    cout << "Enter score obtained for project out of (20%): ";
+    cin >> project;
+    if (cin.fail() || project > 20) {
+        cout << "Invalid input\n";
+        cin.clear();
+        cin.ignore();
+        return 1;
+    }
+
+    cout << "Enter score obtained for assignment out of (10%): ";
+    cin >> assignment;
+    if (cin.fail() || assignment > 10) {
+        cout << "Invalid input\n";
+        cin.clear();
+        cin.ignore();
+        return 1;
+    }
+
+    cout << "Enter score obtained for final exam out of (50%): ";
+    cin >> finalScore;
+    if (cin.fail() || finalScore > 50) {
+        cout << "Invalid input\n";
+        cin.clear();
+        cin.ignore();
+        return 1;
+    }
+
+    total = (test * 1) + (quiz * 1) + (project * 1) + (assignment * 1) + (finalScore * 1);
+    cout << "Your total score is: " << total << endl;
+
+    if (total >= 90) {
+        cout << "Grade: A+" << endl;
+    } else if (total >= 80) {
+        cout << "Grade: A" << endl;
+    } else if (total >= 75) {
+        cout << "Grade: B+" << endl;
+    } else if (total >= 60) {
+        cout << "Grade: B" << endl;
+    } else if (total >= 55) {
+        cout << "Grade: C+" << endl;
+    } else if (total >= 45) {
+        cout << "Grade: C" << endl;
+    } else if (total >= 30) {
+        cout << "Grade: D" << endl;
+    } else {
+        cout << "Grade: F" << endl;
+    }
 
     return 0;
 }
