@@ -1,3 +1,6 @@
+
+---
+
 # **Pseudo Code for Multi-Feature Number Program**
 # **Input**
 
@@ -103,3 +106,4 @@ Pseudo Code
             Print whether it is a perfect number.
 
     End the program.
+---
