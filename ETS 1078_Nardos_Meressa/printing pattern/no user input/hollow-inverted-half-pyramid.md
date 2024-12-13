@@ -1,25 +1,41 @@
-## Pattern: Hollow Inverted half pyramid
+# **Pseudo Code for Hollow Inverted Half Pyramid**
 
-### Input
-1. No explicit input from the user.
+## **Input**
+No explicit input from the user.
 
-### Output
-1. A hollow inverted right-angled triangle pattern made of asterisks (`*`), with 6 rows.
+## **Output**
+A hollow inverted right-angled triangle pattern made of asterisks (`*`), with 6 rows:
 
-### Pseudo Code for the Pattern
+
+---
+
+## **Pseudo Code**
 
 1. **Start the program.**
 
-2. **Outer Loop**:
-   - Loop variable `i` starts from `6` and decrements down to `1` (inclusive).
-   - Represents the number of rows.
+2. **Outer Loop (rows):**
+   - Initialize `i` to `6`.
+   - Loop while `i >= 1` (inclusive):
+     - Each iteration represents one row of the inverted pyramid.
 
-3. **Inner Loop**:
-   - Loop variable `j` starts from `i` and decrements down to `1`.
-   - **Condition Check**:
-     - If `i == 1` (bottom row), `i == 6` (top row), `j == 1` (first column), or `j == i` (last column), print an asterisk (`*`).
-     - Otherwise, print spaces (`" "`).
+3. **Inner Loop (columns):**
+   - Initialize `j` to `1`.
+   - Loop until `j <= i`:
+     - **Condition Check:**
+       - If `i == 6` (top row), `j == 1` (first column), or `j == i` (last column), print an asterisk (`*`).
+       - Otherwise, print a space (`" "`).
 
-4. **End of Inner Loop**:
-   - After printing spaces and asterisks for one row, print a newline character to move to the next row.
-5. **Stop the program.**
+4. **End of Inner Loop:**
+   - After printing spaces and asterisks for one row, **print a newline** character to move to the next row.
+
+5. **End of Outer Loop:**
+   - Repeat steps 3-4 until all rows are printed.
+
+6. **Stop the program.**
+
+---
+
+
+
+
+
