@@ -1,8 +1,8 @@
-## Pseudo Code for Multi-Feature Number Program
-# Input
+# Pseudo Code for Multi-Feature Number Program
+## Input
 - Choice (choice): Integer, representing the user’s selected operation.
 - Number (num): Integer, representing the number the user wants to analyze.
-# Output
+## Output
 - Feature-based Results: Based on the chosen feature, output varies:
 - Reversed number
 - Number of digits
@@ -13,7 +13,7 @@
 - Frequency of digits
 - Strong number check
 - Perfect number check
-# Operations
+## Operations
 1.Perform calculations based on the user’s selected choice (1 to 9).
 2.Allow the program to repeat for new choices or terminate.
 
