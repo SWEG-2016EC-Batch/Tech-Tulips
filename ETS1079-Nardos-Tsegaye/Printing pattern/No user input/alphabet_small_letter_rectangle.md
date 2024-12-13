@@ -1,4 +1,4 @@
-## Pseudo Code for the Given Code
+# Pseudo code for alphabet small letter pattern
 
 ### Input
 1. No explicit input from the user.
