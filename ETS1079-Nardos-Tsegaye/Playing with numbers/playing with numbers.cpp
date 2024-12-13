@@ -88,21 +88,16 @@ int main() {
             }
              break;
        case 7:
-        
-    string numStr = to_string(num);
-    int frequencies[10] = {0}; 
-    for (char digitChar : numStr) {
-        int digit = digitChar - '0'; 
-        frequencies[digit]++; 
-    }
 
-    cout << "Digit\tFrequency"<<endl;
-    for (int i = 0; i < 10; i++) {
-        if (frequencies[i] > 0) { 
-            cout << i << "\t" << frequencies[i] <<endl;
-        }
-    }
-             break;
+             while (num > 0) {
+                remain = num % 10;
+                if (remain == first) {
+                    freq++;
+                }
+                remain /= 10;
+            }
+            cout << "Frequency of first digit: " << freq << endl;
+          break;
        case 8:
         
             while (num > 0) {
