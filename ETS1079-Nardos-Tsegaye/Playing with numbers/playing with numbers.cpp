@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    int choice,num,remain,rev=0,count=0,product=1,first=0,last=0,palindrome,swapped_num=0,freq=0,fact=1,sum=0;
+    int choice,num,remain,rev=0,count=0,product=1,first=0,last=0,palindrome,swapped_num=0,freq[10]={},fact=1,sum=0;
     cout << "1. Reverse of the number" << endl;
     cout << "2. Number of digits" << endl;
     cout << "3. Product of even digits" << endl;
