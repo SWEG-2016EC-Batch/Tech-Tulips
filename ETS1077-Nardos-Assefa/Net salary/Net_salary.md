@@ -59,20 +59,5 @@
 
 ---
 
-## **Example Calculation**:
-- **Input**:
-  - Basic Salary: $2500
-  - Working Hours: 50
-  - Bonus Rate: $5
-  - Overtime Bonus Rate: $10
 
-- **Output**:
-  - Gross Salary: $2750
-  - Tax: $412.5 (15%)
-  - Pension: $1925
-  - Bonus: $250 (including overtime pay)
-  - Net Salary: $1127.5
-
----
-
-
+ 
