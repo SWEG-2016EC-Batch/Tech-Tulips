@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    float basic_slry, working_hrs, bonus_rate,over_time_bonus,bonus,gross_slry,tax, pension,tax_rate, net_slry, extra_wrk_hrs;
+    float basic_slry,over_time_rate,over_time_hrs,over_time_pay, working_hrs, bonus_rate,over_time_bonus,bonus,gross_slry,tax, pension,tax_rate, net_slry, extra_wrk_hrs;
     cout<<"Input your basic salary: "<<endl;
     cin>>basic_slry;
      cout<<"Input your working hours: "<<endl;
@@ -14,8 +14,9 @@ int main()
 
     if(working_hrs>40){
         cout<<"Input your over-time bonus rate/hour: "<<endl;
-        cin>>bonus_rate;
+        cin>>over_time_rate;
         extra_wrk_hrs= working_hrs-40;
+        over_time_pay=over_time_rate*extra_wrk_hrs;
     }
     if(gross_slry<200){
         tax_rate=0.0;
@@ -35,13 +36,15 @@ int main()
     else if(gross_slry>=3500){
         tax_rate=0.3;
     }
-    bonus=working_hrs*bonus_rate;
-    gross_slry= basic_slry + bonus+ (extra_wrk_hrs*bonus_rate);
+    bonus=(working_hrs*bonus_rate)+over_time_pay;
+    gross_slry= basic_slry + bonus;
     tax= gross_slry*tax_rate;
     pension= gross_slry*0.7;
     net_slry= (gross_slry-pension-tax);
 cout<<"Gross salary is: "<<gross_slry<<endl;
-cout<<"Net salary is: "<<net_slry<<endl;
+cout<<"Tax: "<<tax<<endl;
+cout<<"Pension: "<<pension<<endl;
 cout<<"Bonus payment is: "<<bonus<<endl;
 cout<<"Your net salary/pay is : "<<net_slry<<endl;
 }
+    
