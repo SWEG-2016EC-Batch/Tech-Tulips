@@ -61,7 +61,8 @@ int main() {
 
             // Check if the word is in the dictionary
             bool validWord = false;
-            for (string word : dictionary) {
+            for (int i = 0; i < sizeof(dictionary) / sizeof(dictionary[0]); i++) {
+                 string word = dictionary[i];
                 if (word == nextWord) {
                     validWord = true;
                     break;
@@ -71,7 +72,7 @@ int main() {
 
             // Check if the word differs by exactly one letter
             int diffCount = 0;
-            for (size_t i = 0; i < currentWord.size(); ++i) {
+            for (int i = 0; i < currentWord.size(); ++i) {
                 if (currentWord[i] != nextWord[i]) diffCount++;
             }
 
