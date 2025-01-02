@@ -71,4 +71,38 @@
 
 
  ## Flow chart
+```mermaid
+  graph TD
+    A((Start)) --> B[Declare Variables]
+    B --> C[/Welcome Message/]
+    C --> D[Start a New Round]
+    D --> E[/Player 1 Enter Start Word/]
+    E --> F{Is Start Word '0'?}
+    F -- Yes --> G((Exit Game))
+    F -- No --> H[/Player 1 Enter End Word/]
+    H --> I[Initialize Current Word to Start Word]
+    I --> J[/Player 2 Create Word Ladder/]
+    J --> K[/Player 2 Enter Next Word/]
+    K --> L{Is Next Word '0'?}
+    L -- Yes --> M[/Player 2 Gives Up/]
+    M --> N[Player 1 Wins]
+    L -- No --> O[Check Validity of Next Word]
+    O --> P{Is Next Word Valid?}
+    P -- No --> Q[/Prompt for Valid Word/]
+    P -- Yes --> R[Check Word Difference]
+    R --> S{Does Word Differ by One Letter?}
+    S -- No --> Q
+    S -- Yes --> T[Update Current Word]
+    T --> U{Is Current Word End Word?}
+    U -- Yes --> V[Player 2 Wins]
+    U -- No --> K
+    N --> W[Switching Roles]
+    W --> D
+    V --> W
+    W --> X[/Print Final Results/]
+    X --> Y((End))
+
+
+
+
  
