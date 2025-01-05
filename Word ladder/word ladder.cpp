@@ -45,6 +45,10 @@ int main() {
 
         cout << "Player 1, enter an end word: ";
         cin >> endWord;
+       if(cin.fail() || !isalpha( startWord[0])) {
+            cout << "Invalid Input! Please enter valid word." <<< endl;
+            goto b;
+                } 
 
         // Initialize the current word
         currentWord = startWord;
