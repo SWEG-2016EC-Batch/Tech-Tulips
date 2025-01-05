@@ -43,7 +43,8 @@ int main() {
                 }
         if (startWord == "0") break; // Exit the game if Player 1 quits
 
-        cout << "Player 1, enter an end word: ";
+       b:
+       cout << "Player 1, enter an end word: ";
         cin >> endWord;
        if(cin.fail() || !isalpha( startWord[0])) {
             cout << "Invalid Input! Please enter valid word." <<< endl;
@@ -54,7 +55,6 @@ int main() {
         currentWord = startWord;
         bool ladderComplete = false;
 
-        b:
         cout << "Player 2, create a word ladder starting from " << startWord << " to " << endWord << "." << endl;
 
         // Player 2 tries to build the ladder
