@@ -33,8 +33,14 @@ int main() {
         cout << "\n--- Round " << totalRounds << " ---\n";
 
         // Player 1 provides start and end words
+        a:
         cout << "Player 1, enter a start word (or 0 to finish): ";
         cin >> startWord;
+        
+        if(cin.fail() || !isalpha( startWord[0])) {
+            cout << "Invalid Input! Please enter valid word." <<< endl;
+            goto a; // Ask for input again
+                }
         if (startWord == "0") break; // Exit the game if Player 1 quits
 
         cout << "Player 1, enter an end word: ";
@@ -44,10 +50,12 @@ int main() {
         currentWord = startWord;
         bool ladderComplete = false;
 
+        b:
         cout << "Player 2, create a word ladder starting from " << startWord << " to " << endWord << "." << endl;
 
         // Player 2 tries to build the ladder
         while (true) {
+            c:
             cout << "Player 2, enter the next word (or 0 to give up): ";
             cin >> nextWord;
 
