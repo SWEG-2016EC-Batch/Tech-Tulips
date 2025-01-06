@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <unordered_set>
 using namespace std;
 
 
@@ -9,7 +10,7 @@ int main() {
     int totalRounds = 0, player1Wins = 0, player2Wins = 0, player1Losses = 0, player2Losses = 0;
 
     // A larger dictionary of valid English words
-    string dictionary[] = {
+    unordered_set<string> dictionary = {
         "FISH", "WISH", "WASH", "MASH", "MAST", "CAST", "FAST", "LAST",
         "BARK", "MARK", "LARK", "CARK", "CART", "PART", "PARK", "PARK",
         "COLD", "BOLD", "TOLD", "HOLD", "GOLD", "MOLD", "FOLD",
@@ -42,6 +43,10 @@ int main() {
     cout << "Invalid Input! Please enter a valid word." << endl;
     goto a; // Ask for input again
 }
+        if (dictionary.find(startWord) == dictionary.end()) {
+            cout << "Invalid Input! Word not found in dictionary. Please enter a valid word." << endl;
+            goto a;
+        }
 
 if (startWord == "0"){
     break; // Exit the game if Player 1 quits
@@ -53,6 +58,14 @@ if (startWord == "0"){
             cout << "Invalid Input! Please enter valid word." << endl;
             goto b;
                 } 
+        if (startWord.length() != endWord.length()) {
+            cout << "Invalid Input! Words must be of the same length. Please enter a valid word of the same length." << endl;
+            goto b; 
+        }
+        if (dictionary.find(endWord) == dictionary.end()) {
+            cout << "Invalid Input! Word not found in dictionary. Please enter a valid word." << endl;
+            goto b; 
+        }
 
         // Initialize the current word
         currentWord = startWord;
@@ -69,23 +82,16 @@ if (startWord == "0"){
                  cout << "Invalid input. Please enter a valid word." << endl;
                 goto c;
             }
+            if (dictionary.find(nextWord) == dictionary.end()) {
+                cout << "Invalid input. Word not found in dictionary. Please enter a valid word." << endl;
+                goto c; 
+            }
             // Check if Player 2 gives up
             if (nextWord == "0") {
                 cout << "Player 2 gave up. You Lose!" << endl;
                 player2Losses++;
                 player1Wins++;
                 break;
-            }
-
-            // Check if the word is in the dictionary
-            bool validWord = false;
-            for (int i = 0; i < sizeof(dictionary) / sizeof(dictionary[0]); i++) {
-                 string word = dictionary[i];
-                if (word == nextWord) {
-                    validWord = true;
-                    break;
-                }
-            
             }
 
             // Check if the word differs by exactly one letter
