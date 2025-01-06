@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-//let this work please
+
 
 int main() {
     // Declare variables to hold words and game stats
@@ -36,11 +36,17 @@ int main() {
         // Player 1 provides start and end words
         a:
         cout << "Player 1, enter a start word (or 0 to finish): ";
-        cin >> startWord;
+        cin >> startWord; 
         
-        
-        if (startWord == "0") break; // Exit the game if Player 1 quits
+        if (cin.fail() || !isalpha(startWord[0])) {
+    cout << "Invalid Input! Please enter a valid word." << endl;
+    goto a; // Ask for input again
+}
 
+if (startWord == "0") break; // Exit the game if Player 1 quits
+
+        
+        
        b:
        cout << "Player 1, enter an end word: ";
         cin >> endWord;
