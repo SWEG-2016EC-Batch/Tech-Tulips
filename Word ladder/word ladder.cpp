@@ -60,6 +60,7 @@ int main() {
         // Player 2 tries to build the ladder
         while (true) {
             c:
+            if (cin.fail()|| !isalpha(startword[0])){
             cout << "Player 2, enter the next word (or 0 to give up): ";
             cin >> nextWord;
 
