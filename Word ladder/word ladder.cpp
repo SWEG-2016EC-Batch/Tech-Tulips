@@ -38,7 +38,7 @@ int main() {
         cin >> startWord;
         
         if(cin.fail() || !isalpha( startWord[0])) {
-            cout << "Invalid Input! Please enter valid word." <<< endl;
+            cout << "Invalid Input! Please enter valid word." << endl;
             goto a; // Ask for input again
                 }
         if (startWord == "0") break; // Exit the game if Player 1 quits
@@ -47,7 +47,7 @@ int main() {
        cout << "Player 1, enter an end word: ";
         cin >> endWord;
        if(cin.fail() || !isalpha( startWord[0])) {
-            cout << "Invalid Input! Please enter valid word." <<< endl;
+            cout << "Invalid Input! Please enter valid word." << endl;
             goto b;
                 } 
 
@@ -60,7 +60,7 @@ int main() {
         // Player 2 tries to build the ladder
         while (true) {
             c:
-            if (cin.fail()|| !isalpha(startword[0])){
+            if (cin.fail()|| !isalpha(startWord[0])){
             cout << "Player 2, enter the next word (or 0 to give up): ";
             cin >> nextWord;
 
