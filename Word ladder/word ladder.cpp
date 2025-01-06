@@ -1,8 +1,6 @@
 #include <iostream>
 #include <string>
-#include <unordered_set>
 using namespace std;
-
 
 int main() {
     // Declare variables to hold words and game stats
@@ -10,7 +8,7 @@ int main() {
     int totalRounds = 0, player1Wins = 0, player2Wins = 0, player1Losses = 0, player2Losses = 0;
 
     // A larger dictionary of valid English words
-    unordered_set<string> dictionary = {
+    string dictionary[] = {
         "FISH", "WISH", "WASH", "MASH", "MAST", "CAST", "FAST", "LAST",
         "BARK", "MARK", "LARK", "CARK", "CART", "PART", "PARK", "PARK",
         "COLD", "BOLD", "TOLD", "HOLD", "GOLD", "MOLD", "FOLD",
@@ -39,33 +37,20 @@ int main() {
         cout << "Player 1, enter a start word (or 0 to finish): ";
         cin >> startWord; 
         
+        if (startWord == "0") break;
         if (cin.fail() || !isalpha(startWord[0])) {
-    cout << "Invalid Input! Please enter a valid word." << endl;
-    goto a; // Ask for input again
-}
-        if (dictionary.find(startWord) == dictionary.end()) {
-            cout << "Invalid Input! Word not found in dictionary. Please enter a valid word." << endl;
-            goto a;
+            cout << "Invalid Input! Please enter a valid word." << endl;
+            goto a; // Ask for input again
         }
 
-if (startWord == "0"){
-    break; // Exit the game if Player 1 quits
-}
-       b:
-       cout << "Player 1, enter an end word: ";
+        b:
+        cout << "Player 1, enter an end word: ";
         cin >> endWord;
-       if(cin.fail() || !isalpha( startWord[0])) {
+        if (endWord == "0") break;
+        if(cin.fail() || !isalpha( startWord[0])) {
             cout << "Invalid Input! Please enter valid word." << endl;
             goto b;
-                } 
-        if (startWord.length() != endWord.length()) {
-            cout << "Invalid Input! Words must be of the same length. Please enter a valid word of the same length." << endl;
-            goto b; 
-        }
-        if (dictionary.find(endWord) == dictionary.end()) {
-            cout << "Invalid Input! Word not found in dictionary. Please enter a valid word." << endl;
-            goto b; 
-        }
+        } 
 
         // Initialize the current word
         currentWord = startWord;
@@ -76,22 +61,32 @@ if (startWord == "0"){
         // Player 2 tries to build the ladder
         while (true) {
             c:
-          cout << "Player 2, enter the next word (or 0 to give up): ";
+            cout << "Player 2, enter the next word (or 0 to give up): ";
             cin >> nextWord;
-            if (cin.fail()|| !isalpha(startWord[0])) {
-                 cout << "Invalid input. Please enter a valid word." << endl;
-                goto c;
-            }
-            if (dictionary.find(nextWord) == dictionary.end()) {
-                cout << "Invalid input. Word not found in dictionary. Please enter a valid word." << endl;
-                goto c; 
-            }
-            // Check if Player 2 gives up
             if (nextWord == "0") {
                 cout << "Player 2 gave up. You Lose!" << endl;
                 player2Losses++;
                 player1Wins++;
                 break;
+            }
+            if (cin.fail() || !isalpha(nextWord[0])) {
+                cout << "Invalid input. Please enter a valid word." << endl;
+                goto c;
+            }
+
+            // Check if the word is in the dictionary
+            bool validWord = false;
+            for (int i = 0; i < sizeof(dictionary) / sizeof(dictionary[0]); i++) {
+                string word = dictionary[i];
+                if (word == nextWord) {
+                    validWord = true;
+                    break;
+                }
+            }
+
+            if (!validWord) {
+                cout << "Invalid input. Word not found in dictionary. Please enter a valid word." << endl;
+                continue; // Ask for a valid word
             }
 
             // Check if the word differs by exactly one letter
