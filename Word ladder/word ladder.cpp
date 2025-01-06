@@ -37,10 +37,7 @@ int main() {
         cout << "Player 1, enter a start word (or 0 to finish): ";
         cin >> startWord;
         
-        if(cin.fail() || !isalpha( startWord[0])) {
-            cout << "Invalid Input! Please enter valid word." << endl;
-            goto a; // Ask for input again
-                }
+        
         if (startWord == "0") break; // Exit the game if Player 1 quits
 
        b:
