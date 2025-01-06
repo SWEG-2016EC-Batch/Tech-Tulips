@@ -43,10 +43,9 @@ int main() {
     goto a; // Ask for input again
 }
 
-if (startWord == "0") break; // Exit the game if Player 1 quits
-
-        
-        
+if (startWord == "0"){
+    break; // Exit the game if Player 1 quits
+}
        b:
        cout << "Player 1, enter an end word: ";
         cin >> endWord;
@@ -64,10 +63,12 @@ if (startWord == "0") break; // Exit the game if Player 1 quits
         // Player 2 tries to build the ladder
         while (true) {
             c:
-            if (cin.fail()|| !isalpha(startWord[0])){
-            cout << "Player 2, enter the next word (or 0 to give up): ";
+          cout << "Player 2, enter the next word (or 0 to give up): ";
             cin >> nextWord;
-
+            if (cin.fail()|| !isalpha(startWord[0])) {
+                 cout << "Invalid input. Please enter a valid word." << endl;
+                goto c;
+            }
             // Check if Player 2 gives up
             if (nextWord == "0") {
                 cout << "Player 2 gave up. You Lose!" << endl;
@@ -90,7 +91,9 @@ if (startWord == "0") break; // Exit the game if Player 1 quits
             // Check if the word differs by exactly one letter
             int diffCount = 0;
             for (int i = 0; i < currentWord.size(); ++i) {
-                if (currentWord[i] != nextWord[i]) diffCount++;
+                if (currentWord[i] != nextWord[i]){
+                    diffCount++;
+                }
             }
 
             if (diffCount != 1) {
